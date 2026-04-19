@@ -1,121 +1,144 @@
 {
   "site": {
-    "name": "MORNING COFFEE",
-    "domain": "morningcoffee.com"
+    "name": "ARMONIA MATUTINA",
+    "domain": "armoniamatutina.com"
   },
   "navigation": [
-    { "label": "Lifestyle", "href": "#lifestyle" },
-    { "label": "World", "href": "#world" },
-    { "label": "Sports", "href": "#sports" },
-    { "label": "Fashion", "href": "#fashion" },
-    { "label": "Tech", "href": "#tech" },
-    { "label": "Culture", "href": "#culture" },
-    { "label": "Business", "href": "#business" }
+    { "label": "Inicio", "href": "https://www.armoniamatutina.com/" },
+    { "label": "Arte", "href": "https://www.armoniamatutina.com/category/arte/" },
+    { "label": "Cultura", "href": "https://www.armoniamatutina.com/category/cultura/" },
+    { "label": "Vida", "href": "https://www.armoniamatutina.com/category/vida/" },
+    { "label": "Mente", "href": "https://www.armoniamatutina.com/category/mente/" }
   ],
   "hero": {
-    "title": "Where News Finds its Voice",
-    "description": "Subscribe to explore the latest headlines, engage with captivating visuals, and personalize your news journey.",
+    "title": "Un poco de lectura para equilibrar tu mañana",
+    "description": "Suscríbete y recibe lecturas sobre arte, cultura, mente y vida cotidiana — pequeñas dosis para empezar el día con calma e inspiración.",
     "newsletter": {
-      "placeholder": "Enter your email",
-      "buttonText": "Subscribe"
+      "placeholder": "Tu correo electrónico",
+      "buttonText": "Suscribirme"
     }
   },
   "featured": [
     {
-      "id": "feat-1",
-      "title": "From Sketch to Screen: Artistry in Animation",
-      "description": "A journey through the creative process of transforming hand-drawn sketches into captivating animated stories",
-      "image": "https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?w=800&auto=format&fit=crop",
-      "link": "#sketch-to-screen",
+      "id": "feat-ultralearning",
+      "title": "Ultralearning: Aprende de manera estratégica",
+      "description": "Una estrategia intensa y autodirigida diseñada para adquirir habilidades complejas de forma rápida y profunda.",
+      "image": "https://armoniamatutina.com/wp-content/uploads/2024/08/1_8MfY_ID2rAX76Uz6pF6xZw-768x461.webp",
+      "link": "https://armoniamatutina.com/ultralearning-aprende-de-manera-estrategica/",
       "layout": "tall"
     },
     {
-      "id": "feat-2",
-      "title": "Crafting the Perfect Cup",
-      "description": "Delving into the artistry and science behind brewing the perfect cup of coffee, from bean selection to brewing methods",
-      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop",
-      "link": "#perfect-cup",
+      "id": "feat-murakami",
+      "title": "El camino del escritor: Haruki Murakami",
+      "description": "La estricta rutina y la filosofía personal que guían el proceso creativo de uno de los autores más influyentes de Japón.",
+      "image": "https://armoniamatutina.com/wp-content/uploads/2024/08/1_aQIftbmsshWUiO2dtGkCnA-768x320.webp",
+      "link": "https://armoniamatutina.com/el-camino-del-escritor-haruki-murakami/",
       "layout": "wide"
     },
     {
-      "id": "feat-3",
-      "title": "The Evolution of Virtual Reality in Education",
-      "description": "How VR technology is reshaping the education landscape, offering immersive learning experiences for students.",
-      "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=800&auto=format&fit=crop",
-      "link": "#vr-education",
+      "id": "feat-lofi",
+      "title": "Lo-Fi Aesthetic 101: orígenes",
+      "description": "Cómo el Lo-Fi capturó la estética de la imperfección en la producción musical y se convirtió en la banda sonora de toda una generación.",
+      "image": "https://armoniamatutina.com/wp-content/uploads/2024/07/lofi_101-768x433.webp",
+      "link": "https://armoniamatutina.com/lo-fi-aesthetic-101-origenes/",
       "layout": "tall"
     },
     {
-      "id": "feat-4",
-      "title": "Fashion Forward: Trends That Transcend Seasons",
-      "description": "Exploring timeless fashion trends that continue to captivate, inspire, and shape the way we express ourselves through style",
-      "image": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&auto=format&fit=crop",
-      "link": "#fashion-forward",
+      "id": "feat-romanticos",
+      "title": "Vamos a ponernos románticos",
+      "description": "Una reflexión sobre los pequeños momentos cotidianos que encarnan el espíritu del romanticismo en nuestra vida diaria.",
+      "image": "https://armoniamatutina.com/wp-content/uploads/2024/07/vamos_a_ponernos_romanticos-768x546.webp",
+      "link": "https://armoniamatutina.com/vamos-a-ponernos-romanticos/",
       "layout": "wide"
     }
   ],
   "articles": {
-    "title": "Latest Articles",
+    "title": "Últimos artículos",
     "categories": [
-      { "label": "All", "value": "all" },
-      { "label": "Annoucements", "value": "announcements" },
-      { "label": "Travel", "value": "travel" },
-      { "label": "Work", "value": "work" },
-      { "label": "Guides", "value": "guides" },
-      { "label": "Community", "value": "community" }
+      { "label": "Todos", "value": "all" },
+      { "label": "Arte", "value": "arte" },
+      { "label": "Cultura", "value": "cultura" },
+      { "label": "Vida", "value": "vida" },
+      { "label": "Mente", "value": "mente" }
     ],
     "items": [
       {
-        "id": "art-1",
-        "title": "The Untold Stories of Historical Women Leaders",
-        "description": "Shining a spotlight on the often overlooked stories of remarkable women who played pivotal roles in shaping history.",
-        "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=900&auto=format&fit=crop",
-        "category": { "label": "World", "color": "green" },
+        "id": "art-cortador-bambu",
+        "title": "El cuento del cortador de bambú",
+        "description": "Una narración japonesa del siglo X, considerada el monogatari más antiguo conservado y el origen de incontables leyendas.",
+        "image": "https://armoniamatutina.com/wp-content/uploads/2024/07/critica_conto_do_cortador_de_bambu-1-768x512.jpeg",
+        "category": { "label": "Cultura", "color": "orange" },
         "author": {
-          "name": "Sarah Williams",
-          "avatar": "https://i.pravatar.cc/100?img=47"
+          "name": "Armonía Matutina",
+          "avatar": "https://armoniamatutina.com/wp-content/uploads/2024/07/cropped-favicon-32x32.webp"
         },
-        "date": "20 Jan 2022",
-        "tag": "all"
+        "date": "30 Jul 2024",
+        "tag": "cultura"
       },
       {
-        "id": "art-2",
-        "title": "The Science Behind Sleep: Unraveling Night's Magic",
-        "description": "Exploring the fascinating world of sleep cycles, dreams, and the impact of quality sleep on overall health",
-        "image": "https://images.unsplash.com/photo-1520206183501-b80df61043c2?w=900&auto=format&fit=crop",
-        "category": { "label": "Health", "color": "blue" },
+        "id": "art-commonplace",
+        "title": "Del Commonplace Book al Bullet Journal",
+        "description": "Cómo los cuadernos personales han acompañado a pensadores y creadores desde el siglo XIX hasta convertirse en herramienta moderna de productividad.",
+        "image": "https://armoniamatutina.com/wp-content/uploads/2024/07/del_commonplace_book_al_bullet_journal-768x244.webp",
+        "category": { "label": "Mente", "color": "blue" },
         "author": {
-          "name": "Dr. Emily Simmons",
-          "avatar": "https://i.pravatar.cc/100?img=45"
+          "name": "Armonía Matutina",
+          "avatar": "https://armoniamatutina.com/wp-content/uploads/2024/07/cropped-favicon-32x32.webp"
         },
-        "date": "20 Jan 2022",
-        "tag": "guides"
+        "date": "30 Jul 2024",
+        "tag": "mente"
       },
       {
-        "id": "art-3",
-        "title": "Digital Soundscapes: The Rise of Electronic Music",
-        "description": "How electronic music is reshaping cultural landscapes and creating new immersive sonic experiences worldwide.",
-        "image": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=900&auto=format&fit=crop",
-        "category": { "label": "Culture", "color": "purple" },
+        "id": "art-japon-clasico",
+        "title": "Japón clásico a través de su arte",
+        "description": "Yamato-e, Ukiyo-e y Sumi-e: tres estilos que reflejan la filosofía japonesa de armonía con las estaciones y la naturaleza.",
+        "image": "https://armoniamatutina.com/wp-content/uploads/2024/07/japon_clasico_a_traves_de_su_arte-768x528.webp",
+        "category": { "label": "Arte", "color": "purple" },
         "author": {
-          "name": "Marcus Chen",
-          "avatar": "https://i.pravatar.cc/100?img=12"
+          "name": "Armonía Matutina",
+          "avatar": "https://armoniamatutina.com/wp-content/uploads/2024/07/cropped-favicon-32x32.webp"
         },
-        "date": "18 Jan 2022",
-        "tag": "community"
+        "date": "30 Jul 2024",
+        "tag": "arte"
       },
       {
-        "id": "art-4",
-        "title": "Remote Work Revolution: Building Tomorrow's Office",
-        "description": "Insights into how distributed teams are redefining productivity, collaboration, and workplace culture across industries.",
-        "image": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=900&auto=format&fit=crop",
-        "category": { "label": "Work", "color": "orange" },
+        "id": "art-ikigai",
+        "title": "Ikigai: tu razón para levantarte cada mañana",
+        "description": "El concepto japonés de propósito vital y cómo despertar cada día con entusiasmo por perseguir tus sueños y pasiones.",
+        "image": "https://armoniamatutina.com/wp-content/uploads/2024/07/Ikigai-768x419.webp",
+        "category": { "label": "Vida", "color": "green" },
         "author": {
-          "name": "Alex Morgan",
-          "avatar": "https://i.pravatar.cc/100?img=33"
+          "name": "Armonía Matutina",
+          "avatar": "https://armoniamatutina.com/wp-content/uploads/2024/07/cropped-favicon-32x32.webp"
         },
-        "date": "15 Jan 2022",
-        "tag": "work"
+        "date": "26 Jul 2024",
+        "tag": "vida"
+      },
+      {
+        "id": "art-rutina",
+        "title": "La guía para dejar de perder el tiempo",
+        "description": "Estrategias prácticas para enfrentar los retos de productividad del trabajo independiente y diseñar tu propia rutina.",
+        "image": "https://armoniamatutina.com/wp-content/uploads/2024/07/la_guia_para_dejar_de_perder_el_tiempo-768x512.webp",
+        "category": { "label": "Mente", "color": "blue" },
+        "author": {
+          "name": "Armonía Matutina",
+          "avatar": "https://armoniamatutina.com/wp-content/uploads/2024/07/cropped-favicon-32x32.webp"
+        },
+        "date": "26 Jul 2024",
+        "tag": "mente"
+      },
+      {
+        "id": "art-procrastinacion",
+        "title": "La principal enemiga de tus metas: la procrastinación",
+        "description": "Una mirada honesta a cómo usamos nuestro tiempo y herramientas concretas para vencer al peor saboteador de los proyectos personales.",
+        "image": "https://armoniamatutina.com/wp-content/uploads/2024/07/la_principal_enemiga_de_tus_metas-768x513.webp",
+        "category": { "label": "Vida", "color": "green" },
+        "author": {
+          "name": "Armonía Matutina",
+          "avatar": "https://armoniamatutina.com/wp-content/uploads/2024/07/cropped-favicon-32x32.webp"
+        },
+        "date": "26 Jul 2024",
+        "tag": "vida"
       }
     ]
   }
