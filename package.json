@@ -10,7 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -t",
     "gitDeploy": "npm run build && npm run deploy",
     "gitUpdate": "git status && git add . && git commit -m \"Project updated\" && git push origin main",
     "gitPages": "npm run gitUpdate && npm run gitDeploy"
