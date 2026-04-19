@@ -1,0 +1,24 @@
+{
+  "name": "bentobox",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "gh-pages -d dist",
+    "gitDeploy": "npm run build && npm run deploy",
+    "gitUpdate": "git status && git add . && git commit -m \"Project updated\" && git push origin main",
+    "gitPages": "npm run gitUpdate && npm run gitDeploy"
+  },
+  "dependencies": {
+    "astro": "^6.1.8"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

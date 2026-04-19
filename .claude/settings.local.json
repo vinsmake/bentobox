@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npx astro *)",
-      "WebFetch(domain:www.armoniamatutina.com)"
+      "WebFetch(domain:www.armoniamatutina.com)",
+      "Bash(npm install *)",
+      "Bash(npm run *)"
     ]
   }
 }
