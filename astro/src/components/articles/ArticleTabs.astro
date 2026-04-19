@@ -1,0 +1,53 @@
+---
+import type { ArticleTab } from '../../types/content';
+
+interface Props {
+  tabs: ArticleTab[];
+  activeValue?: string;
+}
+
+const { tabs, activeValue = tabs[0]?.value } = Astro.props;
+---
+
+<div class="tabs" role="tablist" aria-label="Article filters">
+  {
+    tabs.map((tab) => (
+      <button
+        type="button"
+        role="tab"
+        class:list={['tabs__tab', { 'tabs__tab--active': tab.value === activeValue }]}
+        data-value={tab.value}
+        aria-selected={tab.value === activeValue}
+      >
+        {tab.label}
+      </button>
+    ))
+  }
+</div>
+
+<style>
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    padding-block: var(--space-sm);
+  }
+
+  .tabs__tab {
+    padding: 0.4rem 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .tabs__tab:hover {
+    color: var(--color-text);
+  }
+
+  .tabs__tab--active {
+    color: var(--color-text);
+    border-bottom-color: var(--color-text);
+  }
+</style>

@@ -1,0 +1,42 @@
+---
+import type { ArticleCategory } from '../../types/content';
+
+interface Props {
+  category: ArticleCategory;
+}
+
+const { category } = Astro.props;
+---
+
+<span class:list={['tag', `tag--${category.color}`]}>{category.label}</span>
+
+<style>
+  .tag {
+    display: inline-block;
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 500;
+  }
+
+  .tag--green {
+    background: var(--tag-green-bg);
+    color: var(--tag-green-fg);
+  }
+  .tag--blue {
+    background: var(--tag-blue-bg);
+    color: var(--tag-blue-fg);
+  }
+  .tag--purple {
+    background: var(--tag-purple-bg);
+    color: var(--tag-purple-fg);
+  }
+  .tag--orange {
+    background: var(--tag-orange-bg);
+    color: var(--tag-orange-fg);
+  }
+  .tag--red {
+    background: var(--tag-red-bg);
+    color: var(--tag-red-fg);
+  }
+</style>

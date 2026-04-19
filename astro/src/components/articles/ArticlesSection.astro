@@ -1,0 +1,47 @@
+---
+import ArticleCard from './ArticleCard.astro';
+import ArticleTabs from './ArticleTabs.astro';
+import type { ArticlesSection } from '../../types/content';
+
+interface Props {
+  section: ArticlesSection;
+}
+
+const { section } = Astro.props;
+---
+
+<section class="articles container" aria-labelledby="articles-title">
+  <header class="articles__header">
+    <h2 id="articles-title" class="articles__title">{section.title}</h2>
+    <ArticleTabs tabs={section.categories} />
+  </header>
+
+  <div class="articles__grid">
+    {section.items.map((article) => <ArticleCard article={article} />)}
+  </div>
+</section>
+
+<style>
+  .articles {
+    padding-block: var(--space-2xl);
+  }
+
+  .articles__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+  }
+
+  .articles__title {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+
+  .articles__grid {
+    display: grid;
+    gap: clamp(2rem, 4vw, 3rem);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+</style>

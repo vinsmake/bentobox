@@ -1,0 +1,89 @@
+---
+import FeaturedCard from './FeaturedCard.astro';
+import Hero from './Hero.astro';
+import type { FeaturedItem, Hero as HeroType } from '../../types/content';
+
+interface Props {
+  hero: HeroType;
+  items: FeaturedItem[];
+}
+
+const { hero, items } = Astro.props;
+const [feat1, feat2, feat3, feat4] = items;
+---
+
+<section class="featured container" aria-label="Featured stories">
+  <div class="featured__grid">
+    <div class="featured__cell featured__cell--feat1">
+      {feat1 && <FeaturedCard item={feat1} />}
+    </div>
+    <div class="featured__cell featured__cell--hero">
+      <Hero hero={hero} />
+    </div>
+    <div class="featured__cell featured__cell--feat2">
+      {feat2 && <FeaturedCard item={feat2} />}
+    </div>
+    <div class="featured__cell featured__cell--feat3">
+      {feat3 && <FeaturedCard item={feat3} />}
+    </div>
+    <div class="featured__cell featured__cell--feat4">
+      {feat4 && <FeaturedCard item={feat4} />}
+    </div>
+  </div>
+</section>
+
+<style>
+  .featured {
+    padding-block: var(--space-lg) var(--space-2xl);
+  }
+
+  .featured__grid {
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: 1.1fr 1.2fr 1.1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'feat1 hero  hero'
+      'feat1 feat2 feat3'
+      'feat4 feat4 feat3';
+  }
+
+  .featured__cell--feat1 {
+    grid-area: feat1;
+  }
+  .featured__cell--hero {
+    grid-area: hero;
+  }
+  .featured__cell--feat2 {
+    grid-area: feat2;
+  }
+  .featured__cell--feat3 {
+    grid-area: feat3;
+  }
+  .featured__cell--feat4 {
+    grid-area: feat4;
+  }
+
+  @media (max-width: 960px) {
+    .featured__grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        'hero  hero'
+        'feat1 feat3'
+        'feat2 feat2'
+        'feat4 feat4';
+    }
+  }
+
+  @media (max-width: 600px) {
+    .featured__grid {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'hero'
+        'feat1'
+        'feat2'
+        'feat3'
+        'feat4';
+    }
+  }
+</style>

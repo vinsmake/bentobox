@@ -1,0 +1,85 @@
+---
+import type { Newsletter } from '../../types/content';
+
+interface Props {
+  newsletter: Newsletter;
+}
+
+const { newsletter } = Astro.props;
+---
+
+<form class="newsletter" onsubmit="event.preventDefault();">
+  <label class="newsletter__field">
+    <span class="visually-hidden">Email</span>
+    <input
+      class="newsletter__input"
+      type="email"
+      name="email"
+      required
+      placeholder={newsletter.placeholder}
+    />
+  </label>
+  <button class="newsletter__button" type="submit">
+    {newsletter.buttonText}
+  </button>
+</form>
+
+<style>
+  .newsletter {
+    display: flex;
+    align-items: stretch;
+    gap: 0.5rem;
+    background: #fff;
+    padding: 0.4rem;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    max-width: 460px;
+    box-shadow: 0 8px 24px -16px rgba(0, 0, 0, 0.15);
+  }
+
+  .newsletter__field {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .newsletter__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0.65rem 1rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: var(--color-text);
+  }
+
+  .newsletter__input::placeholder {
+    color: #9a9a9a;
+  }
+
+  .newsletter__button {
+    background: var(--color-card);
+    color: var(--color-text-on-card);
+    padding: 0.65rem 1.4rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+  }
+
+  .newsletter__button:hover {
+    background: var(--color-card-hover);
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+</style>

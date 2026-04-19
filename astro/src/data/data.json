@@ -1,0 +1,122 @@
+{
+  "site": {
+    "name": "MORNING COFFEE",
+    "domain": "morningcoffee.com"
+  },
+  "navigation": [
+    { "label": "Lifestyle", "href": "#lifestyle" },
+    { "label": "World", "href": "#world" },
+    { "label": "Sports", "href": "#sports" },
+    { "label": "Fashion", "href": "#fashion" },
+    { "label": "Tech", "href": "#tech" },
+    { "label": "Culture", "href": "#culture" },
+    { "label": "Business", "href": "#business" }
+  ],
+  "hero": {
+    "title": "Where News Finds its Voice",
+    "description": "Subscribe to explore the latest headlines, engage with captivating visuals, and personalize your news journey.",
+    "newsletter": {
+      "placeholder": "Enter your email",
+      "buttonText": "Subscribe"
+    }
+  },
+  "featured": [
+    {
+      "id": "feat-1",
+      "title": "From Sketch to Screen: Artistry in Animation",
+      "description": "A journey through the creative process of transforming hand-drawn sketches into captivating animated stories",
+      "image": "https://images.unsplash.com/photo-1602992708529-c9fdb12905c9?w=800&auto=format&fit=crop",
+      "link": "#sketch-to-screen",
+      "layout": "tall"
+    },
+    {
+      "id": "feat-2",
+      "title": "Crafting the Perfect Cup",
+      "description": "Delving into the artistry and science behind brewing the perfect cup of coffee, from bean selection to brewing methods",
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop",
+      "link": "#perfect-cup",
+      "layout": "wide"
+    },
+    {
+      "id": "feat-3",
+      "title": "The Evolution of Virtual Reality in Education",
+      "description": "How VR technology is reshaping the education landscape, offering immersive learning experiences for students.",
+      "image": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=800&auto=format&fit=crop",
+      "link": "#vr-education",
+      "layout": "tall"
+    },
+    {
+      "id": "feat-4",
+      "title": "Fashion Forward: Trends That Transcend Seasons",
+      "description": "Exploring timeless fashion trends that continue to captivate, inspire, and shape the way we express ourselves through style",
+      "image": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&auto=format&fit=crop",
+      "link": "#fashion-forward",
+      "layout": "wide"
+    }
+  ],
+  "articles": {
+    "title": "Latest Articles",
+    "categories": [
+      { "label": "All", "value": "all" },
+      { "label": "Annoucements", "value": "announcements" },
+      { "label": "Travel", "value": "travel" },
+      { "label": "Work", "value": "work" },
+      { "label": "Guides", "value": "guides" },
+      { "label": "Community", "value": "community" }
+    ],
+    "items": [
+      {
+        "id": "art-1",
+        "title": "The Untold Stories of Historical Women Leaders",
+        "description": "Shining a spotlight on the often overlooked stories of remarkable women who played pivotal roles in shaping history.",
+        "image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=900&auto=format&fit=crop",
+        "category": { "label": "World", "color": "green" },
+        "author": {
+          "name": "Sarah Williams",
+          "avatar": "https://i.pravatar.cc/100?img=47"
+        },
+        "date": "20 Jan 2022",
+        "tag": "all"
+      },
+      {
+        "id": "art-2",
+        "title": "The Science Behind Sleep: Unraveling Night's Magic",
+        "description": "Exploring the fascinating world of sleep cycles, dreams, and the impact of quality sleep on overall health",
+        "image": "https://images.unsplash.com/photo-1520206183501-b80df61043c2?w=900&auto=format&fit=crop",
+        "category": { "label": "Health", "color": "blue" },
+        "author": {
+          "name": "Dr. Emily Simmons",
+          "avatar": "https://i.pravatar.cc/100?img=45"
+        },
+        "date": "20 Jan 2022",
+        "tag": "guides"
+      },
+      {
+        "id": "art-3",
+        "title": "Digital Soundscapes: The Rise of Electronic Music",
+        "description": "How electronic music is reshaping cultural landscapes and creating new immersive sonic experiences worldwide.",
+        "image": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=900&auto=format&fit=crop",
+        "category": { "label": "Culture", "color": "purple" },
+        "author": {
+          "name": "Marcus Chen",
+          "avatar": "https://i.pravatar.cc/100?img=12"
+        },
+        "date": "18 Jan 2022",
+        "tag": "community"
+      },
+      {
+        "id": "art-4",
+        "title": "Remote Work Revolution: Building Tomorrow's Office",
+        "description": "Insights into how distributed teams are redefining productivity, collaboration, and workplace culture across industries.",
+        "image": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=900&auto=format&fit=crop",
+        "category": { "label": "Work", "color": "orange" },
+        "author": {
+          "name": "Alex Morgan",
+          "avatar": "https://i.pravatar.cc/100?img=33"
+        },
+        "date": "15 Jan 2022",
+        "tag": "work"
+      }
+    ]
+  }
+}

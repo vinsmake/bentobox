@@ -1,0 +1,46 @@
+---
+import Navigation from './Navigation.astro';
+import type { NavItem, SiteInfo } from '../../types/content';
+
+interface Props {
+  site: SiteInfo;
+  navigation: NavItem[];
+}
+
+const { site, navigation } = Astro.props;
+---
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="header__brand" href="/">{site.name}</a>
+    <Navigation items={navigation} />
+  </div>
+</header>
+
+<style>
+  .header {
+    padding-block: var(--space-lg);
+  }
+
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+  }
+
+  .header__brand {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    letter-spacing: 0.5px;
+    color: var(--color-text);
+  }
+
+  @media (max-width: 720px) {
+    .header__inner {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+</style>
